@@ -1,0 +1,139 @@
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar-cori {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  min-height: 80px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo-cori {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 170px;
+  height: 65px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(32, 201, 151, 0.3));
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.navbar-nav {
+  gap: 22px;
+}
+
+.nav-link {
+  position: relative;
+  color: #2c3e50 !important;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 0 !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #20c997 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #20c997;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ========================= */
+/* BOTÓN HAMBURGUESA */
+/* ========================= */
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 991px) {
+  .navbar-cori {
+    min-height: 75px;
+    padding: 6px 0;
+  }
+
+  .logo-img {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 12px !important;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 576px) {
+  .navbar-cori {
+    min-height: 70px;
+    padding: 4px 0;
+  }
+
+  .logo-img {
+    width: 125px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    padding: 10px !important;
+  }
+}

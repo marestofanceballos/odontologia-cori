@@ -1,0 +1,117 @@
+.turnos-page {
+  min-height: 100vh;
+  background: #f8fafc;
+
+  /* 👇 Espacio para que no tape el navbar */
+  padding-top: 170px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+}
+
+.turnos-page h1 {
+  text-align: center;
+  color: #20c997;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.turnos-form {
+  max-width: 650px;
+  margin: 0 auto;
+
+  background: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.turnos-form input,
+.turnos-form select,
+.turnos-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.turnos-form input:focus,
+.turnos-form select:focus,
+.turnos-form textarea:focus {
+  border-color: #20c997;
+}
+
+.turnos-form button {
+  background: #20c997;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.turnos-form button:hover {
+  background: #18a884;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .turnos-page {
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .turnos-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .turnos-form {
+    padding: 28px;
+  }
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 576px) {
+
+  .turnos-page {
+    padding-top: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+
+  .turnos-page h1 {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+  }
+
+  .turnos-form {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .turnos-form input,
+  .turnos-form select,
+  .turnos-form textarea,
+  .turnos-form button {
+    font-size: 16px;
+  }
+}
