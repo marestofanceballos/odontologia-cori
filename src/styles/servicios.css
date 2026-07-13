@@ -30,19 +30,21 @@
   margin-bottom: 70px;
 }
 
+/* GRID DE SERVICIOS */
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-bottom: 80px;
 }
 
+/* TARJETAS */
 .servicio-card {
   background: white;
   padding: 40px 25px;
   text-align: center;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
   transition: .3s;
 }
 
@@ -86,7 +88,6 @@
     #f7fcfb,
     #ffffff
   );
-
   border-radius: 30px;
   padding: 50px;
   box-shadow: 0 10px 35px rgba(0,0,0,.05);
@@ -164,9 +165,7 @@
 }
 
 /* TABLET */
-
 @media (max-width: 992px) {
-
   .servicios-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -182,13 +181,10 @@
   .servicios-title {
     font-size: 3rem;
   }
-
 }
 
 /* CELULAR */
-
 @media (max-width: 576px) {
-
   .servicios-section {
     padding: 70px 15px;
   }
@@ -228,5 +224,4 @@
   .doctor-avatar i {
     font-size: 3rem;
   }
-
 }

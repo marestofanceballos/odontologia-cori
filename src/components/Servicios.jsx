@@ -34,17 +34,6 @@ function Servicios() {
             </p>
           </div>
 
-          <div className="servicio-card">
-            <div className="servicio-icon">
-              <i className="bi bi-align-center"></i>
-            </div>
-
-            <h4>Ortodoncia</h4>
-
-            <p>
-              Tratamientos para alinear correctamente los dientes y mejorar tu sonrisa.
-            </p>
-          </div>
 
           <div className="servicio-card">
             <div className="servicio-icon">

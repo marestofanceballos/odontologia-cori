@@ -16,33 +16,67 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
+
   padding: 40px 20px;
 }
 
 .hero-overlay {
-  max-width: 820px;
+  max-width: 900px;
   color: #fff;
   animation: fadeUp 0.9s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
-.hero-overlay h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 25px;
-  color: #fff;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.45);
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.hero-logo {
+  width: 450px;
+  max-width: 90%;
+  margin-bottom: -25px;
+  filter: drop-shadow(
+    0 10px 25px rgba(0, 0, 0, 0.5)
+  );
 }
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+.hero-overlay h2 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 20px;
+  transform: translateY(-20px);
+  color: #fff;
+  text-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.45);
+  max-width: 850px;
+}
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
 
 .hero-overlay p {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 40px;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.95);
 }
+
+/* ========================= */
+/* BOTÓN */
+/* ========================= */
 
 .btn-turno {
   display: inline-block;
@@ -54,15 +88,21 @@
   padding: 16px 40px;
   border-radius: 50px;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.35);
+  box-shadow:
+    0 10px 25px rgba(32, 201, 151, 0.35);
 }
 
 .btn-turno:hover {
   background: #18b38b;
   color: #fff;
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 14px 30px rgba(32, 201, 151, 0.45);
+  box-shadow:
+    0 14px 30px rgba(32, 201, 151, 0.45);
 }
+
+/* ========================= */
+/* ANIMACIÓN */
+/* ========================= */
 
 @keyframes fadeUp {
   from {
@@ -81,20 +121,24 @@
 /* ========================= */
 
 @media (max-width: 992px) {
-
   .hero {
     min-height: 85vh;
   }
 
-  .hero-overlay h1 {
-    font-size: 3.2rem;
+  .hero-logo {
+    width: 340px;
+    margin-bottom: -20px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 2.2rem;
+    transform: translateY(-15px);
   }
 
   .hero-overlay p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     max-width: 600px;
   }
-
 }
 
 /* ========================= */
@@ -102,22 +146,29 @@
 /* ========================= */
 
 @media (max-width: 576px) {
-
   .hero {
     min-height: 80vh;
     padding: 20px;
   }
 
-  .hero-overlay h1 {
-    font-size: 2.4rem;
+  .hero-logo {
+    width: 260px;
+    margin-bottom: -15px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.7rem;
     line-height: 1.2;
-    margin-bottom: 18px;
+    transform: translateY(-10px);
+    margin-bottom: 15px;
+    padding: 0 10px;
   }
 
   .hero-overlay p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   .btn-turno {
@@ -126,5 +177,4 @@
     padding: 15px;
     font-size: 1rem;
   }
-
 }
